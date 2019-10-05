@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>flask app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="/">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="/users/">Users</a>
+                </li>
+                <li class="menu__item">
+                    <a href="/user_form/">Add users</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>
+            <em>Users resourse</em>
+        </h1>
+    </header>
+    <section class="conteiner">
+        {% block content %}
+        {% endblock %}
+    </section>
+    <footer class="footer">
+        <center>
+            <small>2019</small>
+        </center>
+    </footer>
+</body>
+</html>

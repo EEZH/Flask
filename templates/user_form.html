@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="/user_form/" method="post" class="form">
+    <div class="form_control">
+        <input type="text" name="name">
+    </div>
+    <div class="form_control">
+        <input type="text" name="surname">
+    </div>
+    <div class="form_control">
+        <input type="text" name="age">
+    </div>
+    <input type="submit" value="add_user" class="form_btn">
+</form>
+<center>
+    <span class="attention">{{ attention }}</span>
+</center>
+
+{% endblock %}
